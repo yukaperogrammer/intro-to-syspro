@@ -3,6 +3,7 @@
 #include <errno.h>
 #define BASE 10
 
+/* 関数プロトタイプ */
 long convert_to_long(char *);
 
 int main(int argc, char *argv[])
