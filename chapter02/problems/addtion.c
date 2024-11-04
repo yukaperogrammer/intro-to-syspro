@@ -30,8 +30,8 @@ long convert_to_long(char *c)
     long num;
     char *ptr;
 
-    num = strtol(c, &ptr, BASE);
     errno = 0;
+    num = strtol(c, &ptr, BASE);
 
     /* 通常エラー処理 */
     if (errno == EINVAL || errno == ERANGE)
